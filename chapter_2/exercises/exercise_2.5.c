@@ -58,6 +58,6 @@ int main() {
 	show_bytes(valp, 1);
 	show_bytes(valp, 2);
 	show_bytes(valp, 3);
-
+	
 	return 0;
 }
