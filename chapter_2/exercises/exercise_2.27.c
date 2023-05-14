@@ -4,6 +4,7 @@
 int uadd_ok(unsigned x, unsigned y)
 {
 	unsigned sum = x + y;
+	// printf("sum = %u\n", sum);
 	return sum >= x;
 }
 
