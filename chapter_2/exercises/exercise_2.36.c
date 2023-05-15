@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 
 /* Determine whether arguments can be multiplied without overflow */
 int tmult_ok(int x, int y) {
@@ -14,9 +15,9 @@ int tmult_ok(int x, int y) {
 
 int main() {
 	int x = 0, y = 1;
-	printf("x = %d, y = %d, x * y is overflow? %d", x, y, !tmult_ok(x, y));
+	printf("x = %d, y = %d, x * y is overflow? %d\n", x, y, !tmult_ok(x, y));
 	x = y = 1e6;
-	printf("x = %d, y = %d, x * y is overflow? %d", x, y, !tmult_ok(x, y));
+	printf("x = %d, y = %d, x * y is overflow? %d\n", x, y, !tmult_ok(x, y));
 
 	return 0;
 }
